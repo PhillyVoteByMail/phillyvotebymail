@@ -33,7 +33,7 @@ pipenv run pytest
 ### Import database data so you can explore it on your local machine
 
 ```bash
-$ pipenv run pavotebymail data-import --import-config phildelphia --postgres-password example /path/to/data_to_import.py
+$ pipenv run pavotebymail data-import --import-config phildelphia --postgres-password postgres /path/to/data_to_import.py
 ```
 
 ### Populate google firestore database
