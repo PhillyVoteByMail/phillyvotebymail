@@ -4,11 +4,18 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
+pytest = "*"
+ipython = "*"
+pavotebymail = {path = ".",editable = true}
 
 [packages]
 firebase-admin = "*"
-ipython = "*"
 names = "*"
+pyyaml = "*"
+sqlalchemy = "*"
+psycopg2 = "*"
+arrow = "*"
+click = "*"
 
 [requires]
 python_version = "3.7"

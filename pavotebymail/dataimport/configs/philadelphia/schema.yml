@@ -1,0 +1,154 @@
+fields:
+- { "field": "ID Number", "type": "String", "is_primary_key": True }
+- { "field": "Title", "type": "String" }
+- { "field": "Last Name", "type": "String" }
+- { "field": "First Name", "type": "String" }
+- { "field": "Middle Name", "type": "String" }
+- { "field": "Suffix", "type": "String" }
+- { "field": "Gender", "type": "String" }
+- { "field": "DOB", "type": "Date" }
+- { "field": "Registration Date", "type": "Date" }
+- { "field": "Voter Status", "type": "String" }
+- { "field": "Status Change Date", "type": "Date" }
+- { "field": "Party Code", "type": "String" }
+- { "field": "House Number", "type": "String" }
+- { "field": "House Number Suffix", "type": "String" }
+- { "field": "Street Name", "type": "String" }
+- { "field": "Apartment Number", "type": "String" }
+- { "field": "Address Line 2", "type": "String" }
+- { "field": "City", "type": "String" }
+- { "field": "State", "type": "String" }
+- { "field": "Zip", "type": "String" }
+- { "field": "Mail Address 1", "type": "String" }
+- { "field": "Mail Address 2", "type": "String" }
+- { "field": "Mail City", "type": "String" }
+- { "field": "Mail State", "type": "String" }
+- { "field": "Mail Zip", "type": "String" }
+- { "field": "Last Vote Date", "type": "Date" }
+- { "field": "Precinct Code", "type": "String" }
+- { "field": "Precinct Split ID", "type": "String" }
+- { "field": "Date Last Changed", "type": "Date" }
+- { "field": "Custom Data 1", "type": "String" }
+- { "field": "District 1", "type": "String" }
+- { "field": "District 2", "type": "String" }
+- { "field": "District 3", "type": "String" }
+- { "field": "District 4", "type": "String" }
+- { "field": "District 5", "type": "String" }
+- { "field": "District 6", "type": "String" }
+- { "field": "District 7", "type": "String" }
+- { "field": "District 8", "type": "String" }
+- { "field": "District 9", "type": "String" }
+- { "field": "District 10", "type": "String" }
+- { "field": "District 11", "type": "String" }
+- { "field": "District 12", "type": "String" }
+- { "field": "District 13", "type": "String" }
+- { "field": "District 14", "type": "String" }
+- { "field": "District 15", "type": "String" }
+- { "field": "District 16", "type": "String" }
+- { "field": "District 17", "type": "String" }
+- { "field": "District 18", "type": "String" }
+- { "field": "District 19", "type": "String" }
+- { "field": "District 20", "type": "String" }
+- { "field": "District 21", "type": "String" }
+- { "field": "District 22", "type": "String" }
+- { "field": "District 23", "type": "String" }
+- { "field": "District 24", "type": "String" }
+- { "field": "District 25", "type": "String" }
+- { "field": "District 26", "type": "String" }
+- { "field": "District 27", "type": "String" }
+- { "field": "District 28", "type": "String" }
+- { "field": "District 29", "type": "String" }
+- { "field": "District 30", "type": "String" }
+- { "field": "District 31", "type": "String" }
+- { "field": "District 32", "type": "String" }
+- { "field": "District 33", "type": "String" }
+- { "field": "District 34", "type": "String" }
+- { "field": "District 35", "type": "String" }
+- { "field": "District 36", "type": "String" }
+- { "field": "District 37", "type": "String" }
+- { "field": "District 38", "type": "String" }
+- { "field": "District 39", "type": "String" }
+- { "field": "District 40", "type": "String" }
+- { "field": "Election 1 Vote Method", "type": "String" }
+- { "field": "Election 1 Party", "type": "String" }
+- { "field": "Election 2 Vote Method", "type": "String" }
+- { "field": "Election 2 Party", "type": "String" }
+- { "field": "Election 3 Vote Method", "type": "String" }
+- { "field": "Election 3 Party", "type": "String" }
+- { "field": "Election 4 Vote Method", "type": "String" }
+- { "field": "Election 4 Party", "type": "String" }
+- { "field": "Election 5 Vote Method", "type": "String" }
+- { "field": "Election 5 Party", "type": "String" }
+- { "field": "Election 6 Vote Method", "type": "String" }
+- { "field": "Election 6 Party", "type": "String" }
+- { "field": "Election 7 Vote Method", "type": "String" }
+- { "field": "Election 7 Party", "type": "String" }
+- { "field": "Election 8 Vote Method", "type": "String" }
+- { "field": "Election 8 Party", "type": "String" }
+- { "field": "Election 9 Vote Method", "type": "String" }
+- { "field": "Election 9 Party", "type": "String" }
+- { "field": "Election 10 Vote Method", "type": "String" }
+- { "field": "Election 10 Party", "type": "String" }
+- { "field": "Election 11 Vote Method", "type": "String" }
+- { "field": "Election 11 Party", "type": "String" }
+- { "field": "Election 12 Vote Method", "type": "String" }
+- { "field": "Election 12 Party", "type": "String" }
+- { "field": "Election 13 Vote Method", "type": "String" }
+- { "field": "Election 13 Party", "type": "String" }
+- { "field": "Election 14 Vote Method", "type": "String" }
+- { "field": "Election 14 Party", "type": "String" }
+- { "field": "Election 15 Vote Method", "type": "String" }
+- { "field": "Election 15 Party", "type": "String" }
+- { "field": "Election 16 Vote Method", "type": "String" }
+- { "field": "Election 16 Party", "type": "String" }
+- { "field": "Election 17 Vote Method", "type": "String" }
+- { "field": "Election 17 Party", "type": "String" }
+- { "field": "Election 18 Vote Method", "type": "String" }
+- { "field": "Election 18 Party", "type": "String" }
+- { "field": "Election 19 Vote Method", "type": "String" }
+- { "field": "Election 19 Party", "type": "String" }
+- { "field": "Election 20 Vote Method", "type": "String" }
+- { "field": "Election 20 Party", "type": "String" }
+- { "field": "Election 21 Vote Method", "type": "String" }
+- { "field": "Election 21 Party", "type": "String" }
+- { "field": "Election 22 Vote Method", "type": "String" }
+- { "field": "Election 22 Party", "type": "String" }
+- { "field": "Election 23 Vote Method", "type": "String" }
+- { "field": "Election 23 Party", "type": "String" }
+- { "field": "Election 24 Vote Method", "type": "String" }
+- { "field": "Election 24 Party", "type": "String" }
+- { "field": "Election 25 Vote Method", "type": "String" }
+- { "field": "Election 25 Party", "type": "String" }
+- { "field": "Election 26 Vote Method", "type": "String" }
+- { "field": "Election 26 Party", "type": "String" }
+- { "field": "Election 27 Vote Method", "type": "String" }
+- { "field": "Election 27 Party", "type": "String" }
+- { "field": "Election 28 Vote Method", "type": "String" }
+- { "field": "Election 28 Party", "type": "String" }
+- { "field": "Election 29 Vote Method", "type": "String" }
+- { "field": "Election 29 Party", "type": "String" }
+- { "field": "Election 30 Vote Method", "type": "String" }
+- { "field": "Election 30 Party", "type": "String" }
+- { "field": "Election 31 Vote Method", "type": "String" }
+- { "field": "Election 31 Party", "type": "String" }
+- { "field": "Election 32 Vote Method", "type": "String" }
+- { "field": "Election 32 Party", "type": "String" }
+- { "field": "Election 33 Vote Method", "type": "String" }
+- { "field": "Election 33 Party", "type": "String" }
+- { "field": "Election 34 Vote Method", "type": "String" }
+- { "field": "Election 34 Party", "type": "String" }
+- { "field": "Election 35 Vote Method", "type": "String" }
+- { "field": "Election 35 Party", "type": "String" }
+- { "field": "Election 36 Vote Method", "type": "String" }
+- { "field": "Election 36 Party", "type": "String" }
+- { "field": "Election 37 Vote Method", "type": "String" }
+- { "field": "Election 37 Party", "type": "String" }
+- { "field": "Election 38 Vote Method", "type": "String" }
+- { "field": "Election 38 Party", "type": "String" }
+- { "field": "Election 39 Vote Method", "type": "String" }
+- { "field": "Election 39 Party", "type": "String" }
+- { "field": "Election 40 Vote Method", "type": "String" }
+- { "field": "Election 40 Party", "type": "String" }
+- { "field": "Home Phone", "type": "String" }
+- { "field": "County", "type": "String" }
+- { "field": "Mail Country", "type": "String" }
