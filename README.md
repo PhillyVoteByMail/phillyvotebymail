@@ -24,6 +24,12 @@ Before you can import data you'll need to be running the databases
 $ docker-compose -f docker/dev-compose.yml up
 ```
 
+### Run tests
+
+```bash
+pipenv run pytest
+```
+
 ### Import database data so you can explore it on your local machine
 
 ```bash
