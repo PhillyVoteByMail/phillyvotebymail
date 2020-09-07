@@ -12,8 +12,8 @@ The goal of this site is to teach people in PA how to vote successfully by mail 
 
 ```bash
 $ brew install postgresql openssl
-$ export LDFLAGS=$(pg_config --ld_flags)
-$ pipenv install 
+$ export LDFLAGS=$(pg_config --ldflags)
+$ pipenv install
 ```
 
 ### Start docker-compose for databases
