@@ -1,8 +1,9 @@
+
 @font-face {
   font-family: "AmericanLemonSans";
 
-  src: url("./fonts/AmericanLemonSans.woff") format("woff"),
-    /* Modern Browsers */ url("./fonts/AmericanLemonSans.woff2") format("woff2"); /* Modern Browsers */
+  src: url("./fonts/AmericanLemonSans.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/AmericanLemonSans.woff2") format("woff2"); /* Modern Browsers */
   font-weight: normal;
   font-style: normal;
 }
@@ -10,8 +11,8 @@
 @font-face {
   font-family: "Futura-Bold";
 
-  src: url("./fonts/Futura-Bold-03.woff") format("woff"),
-    /* Modern Browsers */ url("./fonts/Futura-Bold-03.woff2") format("woff2"); /* Modern Browsers */
+  src: url("./fonts/Futura-Bold-03.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/Futura-Bold-03.woff2") format("woff2"); /* Modern Browsers */
   font-weight: normal;
   font-style: normal;
 }
@@ -19,71 +20,144 @@
 @font-face {
   font-family: "Futura-Medium";
 
-  src: url("./fonts/Futura-Medium-01.woff") format("woff"),
-    /* Modern Browsers */ url("./fonts/Futura-Medium-01.woff2") format("woff2"); /* Modern Browsers */
+  src: url("./fonts/Futura-Medium-01.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/Futura-Medium-01.woff2") format("woff2"); /* Modern Browsers */
   font-weight: normal;
   font-style: normal;
 }
 
-body {
-  margin: 0px !important;
-  background-color: #ffefd9;
-  height: auto;
+body{
+    margin: 0px !important;
+    background-color: #FFEFD9;
 }
 
-a {
-  text-decoration: none;
+a{
+    text-decoration: none;
 }
 
-p {
-  color: #004581;
-  font-family: "Futura-Medium";
-  font-size: 1.5vw;
-  text-align: center;
-  margin: 2vw auto;
-  text-decoration: underline;
+p{
+    color: #004581;
+    font-family: 'Futura-Medium'; 
+    font-size: 1.5vw;
+    text-align: center;
+    margin:2vw auto;
+    display: block;
+    width: 100%;
+    float: left;
+    text-decoration: underline;
 }
 
-#header,
-#footer {
-  background-color: #004581;
-  width: 100%;
+.header {
+    
+    background-color: #004581;
+    width: 100%;
 }
 
-#footer {
-  font-family: "Futura-Medium";
-  color: #ffefd9;
-  font-size: 1.25vw;
-  line-height: 2vw;
+.header_mn {
+    
+    background-color: #993333;
+    width: 100%;
+    text-align: center;
 }
 
-#footer a {
-  color: #ffefd9;
+.header_mn a {
+    color: #FFEFD9;
+    font-family: 'AmericanLemonSans';
+    font-size: 2vw;
 }
 
-h1 {
-  font-family: "AmericanLemonSans";
-  font-size: 6vw;
-  color: #ffefd9;
-  margin: 0;
-  line-height: 6vw;
+h1{
+    font-family: 'AmericanLemonSans';
+    font-size: 6.5vw;
+    color: #FFEFD9;
+    width: 65%;
+    margin: 0 auto;
+    line-height: 6vw;
+    text-align: center;
+    padding: 2vw 1vw;
+    
 }
 
-#content {
-  margin: 0.5vw auto;
-  padding: 0vw 15vw;
+.info_cont{
+     width: 60%;
+     margin: 5vw auto;
+     padding: 0vw 15vw;
 }
 
-.info {
-  font-family: "Futura-Medium";
-  font-size: 2vw;
-  color: #5c5a56;
-  margin: 0.75vw 0px;
+.info{
+    font-family: 'Futura-Medium'; 
+    font-size: 2vw;;
+    color: #5C5A56; 
+    margin:2vw 0px;
+    text-align: center;
 }
 
-.bold {
-  font-family: "Futura-Bold";
-  color: #ba5f5f !important;
+.bold{
+    font-family: 'Futura-Bold';
+}
+
+.red{
+    color: #993333;
+}
+
+.smbutton{
+    height: 3vw;
+    line-height: 3vw;
+    border-radius: 8px;
+    background-color: #993333;
+    color: #FFEFD9;
+    padding: 0vw 2vw;
+    font-size: 2.5vw;
+    font-family: 'AmericanLemonSans';
+    text-align: center;
+    display: inline-block; 
+    color: #FFEFD9;
+}
+
+ .smbutton:hover{
+    background-color: #004581;
+
+}
+
+
+.vid{
+    background-color: #993333;
+    padding: 2vw;
+    width: 100%;
+    margin: 2vw 0px 0px;
+}
+
+
+.button_cont{
+    width: 100%;
+    margin-bottom: 2vw !important;
+    
+}
+
+ .button:hover{
+    background-color: #993333;
+
+}
+
+.button{
+    height: 5vw;
+    line-height: 5vw;
+    border-radius: 8px;
+    background-color: #004581;
+    color: #FFEFD9;
+    font-size: 2.5vw;
+    font-family: 'AmericanLemonSans';
+    text-align: center;
+    width: 60%;
+    display: inline-block; 
+}
+
+.center{
+    margin: 0 auto;
+    text-align: center;
+}
+video{
+    width: 100%
 }
 
 .num_ball {
@@ -112,51 +186,6 @@ h1 {
   line-height: 1vw;
   margin-right: 3vw;
   display: inline-block;
+  float: left;
 }
 
-.button {
-  height: 5vw;
-  line-height: 5vw;
-  border-radius: 8px;
-  background-color: #004581;
-  color: #ffefd9;
-  font-size: 2.5vw;
-  font-family: "AmericanLemonSans";
-  text-align: center;
-  display: inline-block;
-  padding: 0 1vw;
-}
-
-.text_align_center {
-  text-align: center;
-}
-
-#video {
-  margin: 2vw;
-}
-
-.content_width {
-  width: 60%;
-}
-
-.flex_row {
-  display: flex;
-  flex-flow: row;
-}
-
-.flex_col {
-  display: flex;
-  flex-flow: column;
-}
-
-.flex_justify_center {
-  justify-content: center;
-}
-
-.flex_justify_between {
-  justify-content: space-between;
-}
-
-.flex_justify_evenly {
-  justify-content: space-evenly;
-}
