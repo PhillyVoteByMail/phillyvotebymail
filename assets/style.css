@@ -1,0 +1,140 @@
+
+@font-face {
+  font-family: "AmericanLemonSans";
+
+  src: url("./fonts/AmericanLemonSans.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/AmericanLemonSans.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Futura-Bold";
+
+  src: url("./fonts/Futura-Bold-03.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/Futura-Bold-03.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Futura-Medium";
+
+  src: url("./fonts/Futura-Medium-01.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/Futura-Medium-01.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+    margin: 0px !important;
+    background-color: #FFEFD9;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    color: #004581;
+    font-family: 'Futura-Medium'; 
+    font-size: 1.5vw;
+    text-align: center;
+    margin:2vw auto;
+    display: block;
+    width: 100%;
+    float: left;
+    text-decoration: underline;
+}
+
+.header {
+    
+    background-color: #004581;
+    width: 100%;
+}
+
+h1{
+    font-family: 'AmericanLemonSans';
+    font-size: 8vw;
+    color: #FFEFD9;
+    width: 60%;
+    margin: 0 auto;
+    line-height: 6vw;
+    text-align: left;
+    
+}
+
+.info_cont{
+     width: 60%;
+     margin: 5vw auto;
+     padding: 0vw 15vw;
+}
+
+.info{
+    font-family: 'Futura-Medium'; 
+    font-size: 2vw;;
+    color: #5C5A56; 
+    margin:2vw 0px;
+}
+
+.bold{
+    font-family: 'Futura-Bold';
+    color: #BA5F5F !important;
+}
+
+.num_ball{
+    background-color: #993333;
+    padding: 2vw;
+    width: 100%;
+    margin: 2vw 0px 0px;
+    height: 10vw
+}
+
+.num_ball p{
+    font-family: 'Futura-Medium';
+    color: #FFEFD9;
+    font-size: 2vw;
+    line-height: 3vw;
+    float: left;
+    display: inline-block;
+    width: 60%;
+    text-align: left;
+    text-decoration: none;
+}
+
+.num_ball h2{
+    font-family: 'Futura-Bold';
+    font-size: 6vw;
+    color: #FFEFD9;
+    line-height: 1vw;
+    float: left;
+    margin-right: 3vw;
+    display: inline-block;
+}
+
+.button_cont{
+    width: 100%;
+    
+}
+
+.button{
+    height: 5vw;
+    line-height: 5vw;
+    border-radius: 8px;
+    background-color: #004581;
+    color: #FFEFD9;
+    font-size: 2.5vw;
+    font-family: 'AmericanLemonSans';
+    text-align: center;
+    width: 45%;
+    display: inline-block; 
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+
+}
