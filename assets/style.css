@@ -28,7 +28,6 @@
 body {
   margin: 0px !important;
   background-color: #ffefd9;
-  height: auto;
 }
 
 a {
@@ -41,36 +40,43 @@ p {
   font-size: 1.5vw;
   text-align: center;
   margin: 2vw auto;
+  display: block;
+  width: 100%;
+  float: left;
   text-decoration: underline;
 }
 
-#header,
-#footer {
+.header {
   background-color: #004581;
   width: 100%;
 }
 
-#footer {
-  font-family: "Futura-Medium";
-  color: #ffefd9;
-  font-size: 1.25vw;
-  line-height: 2vw;
+.header_mn {
+  background-color: #993333;
+  width: 100%;
+  text-align: center;
 }
 
-#footer a {
+.header_mn a {
   color: #ffefd9;
+  font-family: "AmericanLemonSans";
+  font-size: 2vw;
 }
 
 h1 {
   font-family: "AmericanLemonSans";
-  font-size: 6vw;
+  font-size: 6.5vw;
   color: #ffefd9;
-  margin: 0;
+  width: 65%;
+  margin: 0 auto;
   line-height: 6vw;
+  text-align: center;
+  padding: 2vw 1vw;
 }
 
-#content {
-  margin: 0.5vw auto;
+.info_cont {
+  width: 60%;
+  margin: 2vw auto;
   padding: 0vw 15vw;
 }
 
@@ -78,12 +84,71 @@ h1 {
   font-family: "Futura-Medium";
   font-size: 2vw;
   color: #5c5a56;
-  margin: 0.75vw 0px;
+  margin: 2vw 0px;
+  text-align: center;
 }
 
 .bold {
   font-family: "Futura-Bold";
-  color: #ba5f5f !important;
+}
+
+.red {
+  color: #993333;
+}
+
+.smbutton {
+  height: 3vw;
+  line-height: 3vw;
+  border-radius: 8px;
+  background-color: #993333;
+  color: #ffefd9;
+  padding: 0vw 2vw;
+  font-size: 2.5vw;
+  font-family: "AmericanLemonSans";
+  text-align: center;
+  display: inline-block;
+  color: #ffefd9;
+}
+
+.smbutton:hover {
+  background-color: #004581;
+}
+
+.vid {
+  background-color: #993333;
+  padding: 2vw;
+  width: 100%;
+  margin: 2vw 0px;
+}
+
+.button_cont {
+  width: 100%;
+  margin-bottom: 2vw !important;
+}
+
+.button:hover {
+  background-color: #993333;
+}
+
+.button {
+  height: 5vw;
+  line-height: 5vw;
+  border-radius: 8px;
+  background-color: #004581;
+  color: #ffefd9;
+  font-size: 2.5vw;
+  font-family: "AmericanLemonSans";
+  text-align: center;
+  width: 60%;
+  display: inline-block;
+}
+
+.center {
+  /* margin: 0 auto; */
+  text-align: center;
+}
+video {
+  width: 100%;
 }
 
 .num_ball {
@@ -112,51 +177,5 @@ h1 {
   line-height: 1vw;
   margin-right: 3vw;
   display: inline-block;
-}
-
-.button {
-  height: 5vw;
-  line-height: 5vw;
-  border-radius: 8px;
-  background-color: #004581;
-  color: #ffefd9;
-  font-size: 2.5vw;
-  font-family: "AmericanLemonSans";
-  text-align: center;
-  display: inline-block;
-  padding: 0 1vw;
-}
-
-.text_align_center {
-  text-align: center;
-}
-
-#video {
-  margin: 2vw;
-}
-
-.content_width {
-  width: 60%;
-}
-
-.flex_row {
-  display: flex;
-  flex-flow: row;
-}
-
-.flex_col {
-  display: flex;
-  flex-flow: column;
-}
-
-.flex_justify_center {
-  justify-content: center;
-}
-
-.flex_justify_between {
-  justify-content: space-between;
-}
-
-.flex_justify_evenly {
-  justify-content: space-evenly;
+  float: left;
 }
