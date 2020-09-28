@@ -198,7 +198,7 @@ video {
     font-family: "AmericanLemonSans";
     font-size: 2vw;
     text-align: center;
-    position: fixed;
+    position:static;
     bottom: 0; 
 }
 
