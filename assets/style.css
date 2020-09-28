@@ -76,8 +76,9 @@ h1 {
 
 .info_cont {
   width: 60%;
-  margin: 2vw auto;
+  margin: 4vw auto;
   padding: 0vw 15vw;
+  margin-bottom: 150px;
 }
 
 .info {
@@ -86,6 +87,14 @@ h1 {
   color: #5c5a56;
   margin: 2vw 0px;
   text-align: center;
+}
+
+.info_bod {
+  font-family: "Futura-Medium";
+  font-size: 1.5vw;
+  color: #5c5a56;
+  margin: 3vw 0px;
+  text-align: left;
 }
 
 .bold {
@@ -178,4 +187,28 @@ video {
   margin-right: 3vw;
   display: inline-block;
   float: left;
+}
+
+.footer{
+    background-color: #004581;
+    height: 5vw;
+    max-height: 100px;
+    width: 100%;
+    color: #ffefd9;
+    font-family: "AmericanLemonSans";
+    font-size: 2vw;
+    text-align: center;
+    position: fixed;
+    bottom: 0; 
+}
+
+.footer a{
+    background-color: #004581;
+    height: 5vw;
+    max-height: 100px;
+    width: 100%;
+    color: #ffefd9 !important;
+    font-family: "AmericanLemonSans";
+    font-size: 2vw;
+    
 }
