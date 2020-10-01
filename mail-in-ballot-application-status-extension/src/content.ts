@@ -6,8 +6,8 @@ const resultTableCells =
     '#ctl00_ContentPlaceHolder1_ResultPanel table tr+tr+tr td';
 
 function insertVoterData(voterData) {
-    const firstName = voterData[0];
-    const lastName = voterData[1];
+    const lastName = voterData[0];
+    const firstName = voterData[1];
     const dob = voterData[2];
 
     console.log('Entering voter: ', JSON.stringify(voterData));
@@ -25,26 +25,32 @@ function insertVoterData(voterData) {
 function getResults() {
     let results: string[] = [];
     const tableCells = document.querySelectorAll(resultTableCells);
-    for (let i = 0; i < tableCells.length; i++) {
-        const cell = tableCells[i];
-        let cellText = (cell as HTMLTableCellElement).textContent || '';
-        cellText = cellText.trim();
-        results.push(cellText);
+
+    if (tableCells.length > 0) {
+        for (let i = 0; i < tableCells.length; i++) {
+            const cell = tableCells[i];
+            let cellText = (cell as HTMLTableCellElement).textContent || '';
+            cellText = cellText.trim();
+            results.push(cellText);
+        }
+        browser.runtime.sendMessage(results);
     }
-    browser.runtime.sendMessage(results);
 }
 
-window.addEventListener('load', () => {
-    console.log('page is fully loaded');
+// window.addEventListener('DOMContentLoaded', (event) => {
+//     console.log('DOM fully loaded and parsed');
+// });
 
-    browser.runtime.onMessage.addListener((msg) => {
-        const type = msg.type;
-        const payload = msg.payload;
+browser.runtime.onMessage.addListener((msg) => {
+    console.log('Received message: ', JSON.stringify(msg));
+    // const type = msg.type;
+    // const payload = msg.payload;
 
-        if (type === 'voterData') {
-            insertVoterData(payload);
-        } else if (type === 'getResults') {
-            getResults();
-        }
-    });
+    // if (type === 'voterData') {
+    //     insertVoterData(payload);
+    // } else if (type === 'getResults') {
+    //     getResults();
+    // }
+    insertVoterData(msg);
+    getResults();
 });

@@ -1,49 +1,53 @@
-const statusTrackerUrl = 'https://www.pavoterservices.pa.gov/Pages/BallotTracking.aspx';
-let tabId: number | undefined;
-let index = 0;
+const ballotStatusTrackerUrl =
+    'https://www.pavoterservices.pa.gov/Pages/BallotTracking.aspx';
+let index;
 
 const voters = [
     ['Ignore this placeholder.', 'Select Philadelphia in the dropdown.', '01/01/1900'],
-    ['Alice', 'Smith', '01/01/1990'],
-    ['Bob', 'Smith', '01/01/2000'],
-    ['Charlie', 'Smith', '01/01/2000'],
-    ['Dee', 'Smith', '01/01/2000'],
-    ['Eleanor', 'Smith', '01/01/2000'],
-]
+
+];
 
 browser.runtime.onInstalled.addListener(async () => {
-    console.log('onInstalled()');
-    let tab = await browser.tabs.create({ url: statusTrackerUrl });
-    tabId = tab.id;
+    console.log('onInstall()');
+
+    // Set the index to zero on install.
+    await browser.storage.local.set({ 'index': 0 });
 });
 
 browser.webNavigation.onCompleted.addListener(async (details) => {
-    console.log('Page loaded.');
-    if (details.tabId !== tabId) {
-        return;
-    }
-    if (index > 0) {
-        const prevVoter = voters[index - 1];
-        console.log(
-            'Page is displaying results for: ',
-            JSON.stringify(prevVoter)
-        );
-    }
+    console.log('Ballot status tracker page loaded.');
+    const tabId = details.tabId;
+
+    // Load current index from storage. This is required in case the extension
+    // is stopped/started.
+    const results = await browser.storage.local.get('index');
+    index = results['index'];
+    console.log('index = ', index);
 
     if (index >= voters.length) {
         browser.tabs.sendMessage(tabId, ['All', 'Done!', '']);
         return;
     }
 
-    const currentVoter = voters[index];
-    console.log(
-        'Telling page to fill form for next voter: ',
-        JSON.stringify(currentVoter)
-    );
-    browser.tabs.sendMessage(tabId, currentVoter);
-    index++;
+    // Load the correct voter to look up next.
+    const voter = voters[index];
+    console.log('Voter: ', JSON.stringify(voter));
+
+    // Send the voter data to the content script.
+    browser.tabs.sendMessage(tabId, voter);
+
+    // Update and save the index.
+    await browser.storage.local.set({ 'index': ++index });
 }, {
     url: [
-        { urlEquals: statusTrackerUrl }
+        { urlEquals: ballotStatusTrackerUrl }
     ]
+});
+
+browser.runtime.onMessage.addListener((results) => {
+    const prevVoter = voters[index - 2];
+    console.log('===== Results received =====');
+    console.log('Voter: ', JSON.stringify(prevVoter));
+    console.log('Results: ', JSON.stringify(results));
+    console.log('==========');
 });
