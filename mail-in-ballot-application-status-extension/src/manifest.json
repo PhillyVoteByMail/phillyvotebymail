@@ -14,5 +14,5 @@
       "js": ["browser-polyfill.js", "content.js"]
     }
   ],
-  "permissions": ["webNavigation", "storage"]
+  "permissions": ["webNavigation", "storage", "unlimitedStorage"]
 }

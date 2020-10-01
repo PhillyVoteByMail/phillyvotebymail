@@ -44,10 +44,16 @@ browser.webNavigation.onCompleted.addListener(async (details) => {
     ]
 });
 
-browser.runtime.onMessage.addListener((results) => {
-    const prevVoter = voters[index - 2];
+browser.runtime.onMessage.addListener(async (results) => {
+    const voter = voters[index - 2];
+
     console.log('===== Results received =====');
-    console.log('Voter: ', JSON.stringify(prevVoter));
+    console.log('Voter: ', JSON.stringify(voter));
     console.log('Results: ', JSON.stringify(results));
     console.log('==========');
+
+    const voterKey = voter.join('_');
+    await browser.storage.local.set({
+        [voterKey]: results
+    });
 });
