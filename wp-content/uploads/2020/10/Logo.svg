@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="440px" height="150px" viewBox="0 0 440 150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Logo</title>
+    <g id="Logo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="AmericanLemonSans, American Lemon Sans" font-size="120" font-weight="normal" line-spacing="65">
+        <g id="Group" transform="translate(12.000000, 8.000000)" fill="#FFEFD9">
+            <text id="VO-TE">
+                <tspan x="0" y="84">VO</tspan>
+                <tspan x="7.52929688" y="149">TE</tspan>
+            </text>
+            <text id="PHILLY!" letter-spacing="1.2">
+                <tspan x="123" y="149">PHILLY!</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

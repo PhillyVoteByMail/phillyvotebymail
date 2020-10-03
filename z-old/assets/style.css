@@ -1,0 +1,214 @@
+@font-face {
+  font-family: "AmericanLemonSans";
+
+  src: url("./fonts/AmericanLemonSans.woff") format("woff"),
+    /* Modern Browsers */ url("./fonts/AmericanLemonSans.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Futura-Bold";
+
+  src: url("./fonts/Futura-Bold-03.woff") format("woff"),
+    /* Modern Browsers */ url("./fonts/Futura-Bold-03.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Futura-Medium";
+
+  src: url("./fonts/Futura-Medium-01.woff") format("woff"),
+    /* Modern Browsers */ url("./fonts/Futura-Medium-01.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0px !important;
+  background-color: #ffefd9;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  color: #004581;
+  font-family: "Futura-Medium";
+  font-size: 1.5vw;
+  text-align: center;
+  margin: 2vw auto;
+  display: block;
+  width: 100%;
+  float: left;
+  text-decoration: underline;
+}
+
+.header {
+  background-color: #004581;
+  width: 100%;
+}
+
+.header_mn {
+  background-color: #993333;
+  width: 100%;
+  text-align: center;
+}
+
+.header_mn a {
+  color: #ffefd9;
+  font-family: "AmericanLemonSans";
+  font-size: 2vw;
+}
+
+h1 {
+  font-family: "AmericanLemonSans";
+  font-size: 6.5vw;
+  color: #ffefd9;
+  width: 65%;
+  margin: 0 auto;
+  line-height: 6vw;
+  text-align: center;
+  padding: 2vw 1vw;
+}
+
+.info_cont {
+  width: 60%;
+  margin: 4vw auto;
+  padding: 0vw 15vw;
+  margin-bottom: 150px;
+}
+
+.info {
+  font-family: "Futura-Medium";
+  font-size: 2vw;
+  color: #5c5a56;
+  margin: 2vw 0px;
+  text-align: center;
+}
+
+.info_bod {
+  font-family: "Futura-Medium";
+  font-size: 1.5vw;
+  color: #5c5a56;
+  margin: 3vw 0px;
+  text-align: left;
+}
+
+.bold {
+  font-family: "Futura-Bold";
+}
+
+.red {
+  color: #993333;
+}
+
+.smbutton {
+  height: 3vw;
+  line-height: 3vw;
+  border-radius: 8px;
+  background-color: #993333;
+  color: #ffefd9;
+  padding: 0vw 2vw;
+  font-size: 2.5vw;
+  font-family: "AmericanLemonSans";
+  text-align: center;
+  display: inline-block;
+  color: #ffefd9;
+}
+
+.smbutton:hover {
+  background-color: #004581;
+}
+
+.vid {
+  background-color: #993333;
+  padding: 2vw;
+  width: 100%;
+  margin: 2vw 0px;
+}
+
+.button_cont {
+  width: 100%;
+  margin-bottom: 2vw !important;
+}
+
+.button:hover {
+  background-color: #993333;
+}
+
+.button {
+  height: 5vw;
+  line-height: 5vw;
+  border-radius: 8px;
+  background-color: #004581;
+  color: #ffefd9;
+  font-size: 2.5vw;
+  font-family: "AmericanLemonSans";
+  text-align: center;
+  width: 60%;
+  display: inline-block;
+}
+
+.center {
+  /* margin: 0 auto; */
+  text-align: center;
+}
+video {
+  width: 100%;
+}
+
+.num_ball {
+  background-color: #993333;
+  padding: 2vw;
+  width: 100%;
+  margin: 2vw 0px 0px;
+  height: 10vw;
+}
+
+.num_ball p {
+  font-family: "Futura-Medium";
+  color: #ffefd9;
+  font-size: 2vw;
+  line-height: 3vw;
+  display: inline-block;
+  width: 60%;
+  text-align: left;
+  text-decoration: none;
+}
+
+.num_ball h2 {
+  font-family: "Futura-Bold";
+  font-size: 6vw;
+  color: #ffefd9;
+  line-height: 1vw;
+  margin-right: 3vw;
+  display: inline-block;
+  float: left;
+}
+
+.footer{
+    background-color: #004581;
+    height: 5vw;
+    max-height: 100px;
+    width: 100%;
+    color: #ffefd9;
+    font-family: "AmericanLemonSans";
+    font-size: 2vw;
+    text-align: center;
+    position:static;
+    bottom: 0; 
+}
+
+.footer a{
+    background-color: #004581;
+    height: 5vw;
+    max-height: 100px;
+    width: 100%;
+    color: #ffefd9 !important;
+    font-family: "AmericanLemonSans";
+    font-size: 2vw;
+    
+}
