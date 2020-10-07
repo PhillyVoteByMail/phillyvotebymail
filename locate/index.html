@@ -10,6 +10,7 @@
     <title>BALLOT DROP-OFF LOCATIONS &#8211; Vote Philly!</title>
     <link rel='dns-prefetch' href='//fonts.googleapis.com' />
     <link rel='dns-prefetch' href='//s.w.org' />
+    <script src="./locate.js"></script>
     <script type="text/javascript">
         window._wpemojiSettings = {
             "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/72x72\/",
@@ -616,9 +617,27 @@
                                                                             <script src="https://www.phillyvotebymail.org/assets/locate.js"></script>
                                                                         </p>
                                                                         <div id="content">
-                                                                            <div class="info"><label for="address">Your address:</label> <input id="address" type="text" /> <button id="btn">Go!</button></div>
-                                                                            <div class="info" style="display: none;">Scroll down to see the address and operation hours of the ballot drop-off location closest to:<br /><span id="addressText"></span>.</div>
-                                                                            <div class="info"><iframe id="iwillvote" style="display: none;" src="https://iwillvote.com/locate/results?address=2200%20Kimball%20Street%2C%20Philadelphia%2C%20PA%2C%20USA" width="75%" height="100%" frameborder="0" sandbox="allow-scripts"></iframe></div>
+                                                                            <div class="info">
+                                                                                <label for="address">Your address:</label>
+                                                                                <input id="address" type="text" />
+                                                                                <button id="btn">Go!</button>
+                                                                            </div>
+                                                                            <div class="info" style="display: none;">
+                                                                                Scroll down to see the address and operation hours of the ballot
+                                                                                drop-off location closest to:<br/>
+                                                                                <span id="addressText"></span>.
+                                                                            </div>
+                                                                            <div class="info">
+                                                                              <iframe
+                                                                                style="display: none;"
+                                                                                id="iwillvote"
+                                                                                sandbox="allow-scripts"
+                                                                                src=""
+                                                                                height="100%"
+                                                                                width="75%"
+                                                                                frameborder="0"
+                                                                              ></iframe>
+                                                                            </div>
                                                                         </div>
                                                                         <!-- /wp:html -->
 
