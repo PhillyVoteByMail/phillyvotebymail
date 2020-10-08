@@ -611,6 +611,14 @@
                                                                                 #content {
                                                                                     padding-top: 20px !important;
                                                                                 }
+                                                                                
+                                                                                .located{
+                                                                                    min-height: 100vh;
+                                                                                }
+                                                                                
+                                                                                .scroll{
+                                                                                    margin: 20px auto;
+                                                                                }
                                                                             </style>
                                                                         </p>
                                                                         <p>
@@ -622,18 +630,18 @@
                                                                                 <input id="address" type="text" />
                                                                                 <button id="btn">Go!</button>
                                                                             </div>
-                                                                            <div class="info" style="display: none; margin: 20px auto;">
+                                                                            <div class="info scroll" style="display: none;">
                                                                                 Scroll down to see the address and operation hours of the ballot
                                                                                 drop-off location closest to:<br/>
                                                                                 <span id="addressText"></span>.
                                                                             </div>
                                                                             <div class="info">
-                                                                              <iframe
+                                                                              <iframe class="located"
                                                                                 style="display: none;"
                                                                                 id="iwillvote"
                                                                                 sandbox="allow-scripts"
                                                                                 src=""
-                                                                                height="100vh"
+                                                                                height="100%"
                                                                                 width="75%"
                                                                                 frameborder="0"
                                                                               ></iframe>
