@@ -2259,6 +2259,11 @@ body .tg-oembed-container * {
 /*=============================================
 =            footer            =
 =============================================*/
+.site-footer .tg-site-footer{
+    position: fixed;
+    bottom: 0px;
+}
+
 .tg-site-footer .site-info {
     text-align: center;
     padding: 1rem 0;
