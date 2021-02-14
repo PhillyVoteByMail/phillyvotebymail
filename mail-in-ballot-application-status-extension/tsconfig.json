@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "lib": [
+            "ESNext",
+            "DOM",
+            "WebWorker"
+        ],
+        "strictNullChecks": true,
+        "module": "commonjs",
+        "target": "ES2017",
+        "typeRoots": [
+            "node_modules/@types/",
+            "@types/"
+        ]
+    }
+}
